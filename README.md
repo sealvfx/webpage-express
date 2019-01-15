@@ -1,4 +1,4 @@
-## Source Code of an Express, hbs, heroku server
+## Source Code of an Express, hbs webserver
 
 an example of a webpage app.
 
