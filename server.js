@@ -1,4 +1,5 @@
 const express = require('express');
+const favicon = require('serve-favicon');
 const app = express();
 
 const hbs = require('hbs');
@@ -19,6 +20,8 @@ app.get('/', (req, res) => {
         anio: new Date().getFullYear()
     });
 });
+
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.get('/about', (req, res) => {
     res.render('about', {
