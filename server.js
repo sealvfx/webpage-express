@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, 'favicon.png')))
 
 app.get('/about', (req, res) => {
     res.render('about', {
