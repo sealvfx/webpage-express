@@ -1,5 +1,6 @@
 const express = require('express');
 const favicon = require('serve-favicon');
+var path = require('path');
 const app = express();
 
 const hbs = require('hbs');
@@ -21,7 +22,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.use(favicon(__dirname, 'public/favicon.ico'));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 app.get('/about', (req, res) => {
     res.render('about', {
