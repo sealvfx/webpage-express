@@ -14,19 +14,7 @@ app.use(express.static(__dirname + '/public'));
 hbs.registerPartials(__dirname + '/views/parcials'); // Partial HTML elements (templates)
 app.set('view engine', 'hbs');
 
-app.get('/', (req, res) => {
-
-    res.render('home', {
-        nombre: "Maximiliano",
-        anio: new Date().getFullYear()
-    });
-});
-
-app.get('/about', (req, res) => {
-    res.render('about', {
-        anio: new Date().getFullYear()
-    });
-});
+app.get('/', (req, res) => {res.render('home')});
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
