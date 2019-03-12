@@ -1,6 +1,6 @@
 const express = require('express');
 const favicon = require('serve-favicon');
-var path = require('path');
+const path = require('path');
 const app = express();
 
 const hbs = require('hbs');
@@ -28,6 +28,6 @@ app.get('/about', (req, res) => {
     });
 });
 
-app.use(favicon(path.join(__dirname, 'favicon.png')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
