@@ -1,10 +1,3 @@
-## Source Code of an Express, hbs webserver
+## shut up
 
-an example of a webpage app.
-
-remember to:
-```
-npm install
-```
-
-this app was made possible thanks to this course: https://www.udemy.com/node-de-cero-a-experto/
+thanks https://github.com/Maxi-F/ for the example :> 
