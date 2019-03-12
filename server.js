@@ -22,12 +22,12 @@ app.get('/', (req, res) => {
     });
 });
 
-app.use(favicon(path.join(__dirname, 'favicon.png')))
-
 app.get('/about', (req, res) => {
     res.render('about', {
         anio: new Date().getFullYear()
     });
 });
+
+app.use(favicon(path.join(__dirname, 'favicon.png')));
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
